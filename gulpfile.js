@@ -57,7 +57,7 @@ gulp.task('build:less', function () {
         .on('error', gutil.log);
 });
 
-gulp.task('build:angular', ['clean'], function () {
+gulp.task('build:angular', function () {
     
     var tsStream = tsProject.src()
         .pipe(ts(tsProject)).js;
@@ -100,12 +100,13 @@ gulp.task('watch', ['default'], function() {
         server: './dist'
     });
     
+    gulp.watch(paths.in.ngHtml, ['build:angular']);
     gulp.watch(paths.in.index, ['build:static']);
-    gulp.watch(['./src/**/*.ts'], ['default']);
+    gulp.watch(['./src/**/*.ts'], ['build:angular']);
     gulp.watch(paths.in.less, ['build:less']);
     
-    gulp.watch(paths.out.js).on('change', browserSync.reload);
-    gulp.watch('./dist/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./dist/js/app.min.js').on('change', browserSync.reload);
+    gulp.watch('./dist/index.html').on('change', browserSync.reload);
 });
 
 var paths = {

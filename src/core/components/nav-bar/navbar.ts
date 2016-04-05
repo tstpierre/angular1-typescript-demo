@@ -1,18 +1,31 @@
 module app.core.components {
     
-    class NavBarController {
+    interface INavBarController {
+        collapsed: boolean;
         
+        clicked (): void;
     }
     
-    function navBarComponent (): ng.IComponentOptions {
+    class NavBarController implements INavBarController {
+        
+        collapsed: boolean = true;
+        
+        clicked = (): void => {
+            this.collapsed = true;
+        }
+    }
+    
+    function navBarDirective (): ng.IDirective {
         return {
+            restrict: 'E',
             templateUrl: 'app/core/components/nav-bar/navbar.html',
             controller: NavBarController,
-            controllerAs: 'vm'
+            controllerAs: 'vm',
+            replace: true
         }
     }
     
     angular
         .module('app.core')
-        .component('navBar', navBarComponent());
+        .directive('navBar', navBarDirective);
 }
