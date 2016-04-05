@@ -1,0 +1,30 @@
+{
+  "name": "angular1-typescript-demo",
+  "version": false,
+  "dependencies": {},
+  "ambientDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160328125810",
+    "angular-ui-bootstrap": "registry:dt/angular-ui-bootstrap#0.13.3+20160317120654",
+    "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160317120654",
+    "jquery": "registry:dt/jquery#1.10.0+20160316155526",
+    "orchestrator": "registry:dt/orchestrator#0.0.0+20160316155526",
+    "q": "registry:dt/q#0.0.0+20160323171452"
+  },
+  "ambientDevDependencies": {
+    "browser-sync": "registry:dt/browser-sync#0.0.0+20160316155526",
+    "del": "registry:dt/del#2.2.0+20160317120654",
+    "event-stream": "registry:dt/event-stream#0.0.0+20160216030252",
+    "gulp": "registry:dt/gulp#3.8.0+20160316155526",
+    "gulp-concat": "registry:dt/gulp-concat#0.0.0+20160316155526",
+    "gulp-less": "registry:dt/gulp-less#0.0.0+20160316155526",
+    "gulp-ng-annotate": "registry:dt/gulp-ng-annotate#0.0.0+20160316155526",
+    "gulp-rename": "registry:dt/gulp-rename#0.0.0+20160316155526",
+    "gulp-sourcemaps": "registry:dt/gulp-sourcemaps#0.0.0+20160316155526",
+    "gulp-typescript": "registry:dt/gulp-typescript#0.0.0+20160317120654",
+    "gulp-uglify": "registry:dt/gulp-uglify#0.0.0+20160316155526",
+    "gulp-util": "registry:dt/gulp-util#0.0.0+20160316155526",
+    "gulp-watch": "registry:dt/gulp-watch#4.1.1+20160316155526",
+    "node": "registry:dt/node#4.0.0+20160330064709",
+    "run-sequence": "registry:dt/run-sequence#0.0.0+20160316155526"
+  }
+}

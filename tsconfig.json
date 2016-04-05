@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "removeComments": true,
+        "allowUnreachableCode": false,
+        "outDir": "dist/js"
+    },
+    "exclude": [
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts",
+        "dist"
+    ]
+}

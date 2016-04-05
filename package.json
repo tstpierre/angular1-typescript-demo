@@ -1,0 +1,38 @@
+{
+  "name": "angular1-typescript-demo",
+  "version": "1.0.0",
+  "description": "Demo of common angular tasks built using TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tstpierre/angular1-typescript-demo.git"
+  },
+  "author": "Thomas St Pierre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tstpierre/angular1-typescript-demo/issues"
+  },
+  "homepage": "https://github.com/tstpierre/angular1-typescript-demo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "del": "^2.2.0",
+    "event-stream": "^3.3.2",
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.12.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "less": "^2.6.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "run-sequence": "^1.1.5",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.12"
+  }
+}
